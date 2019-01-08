@@ -28,58 +28,58 @@
 \ProcessOptions\relax
 
 % Set fixed margins
-\geometry{right=0in, bottom=0in, left=0.24in, nohead, nofoot}
+\geometry{right=0mm, bottom=0mm, left=5mm, nohead, nofoot}
 
 % Calculate margins and number of dots based on options and orientation
 \if@dotlandscape
   \if@dotmargin
     % landscape with margin
-    \geometry{top=0.74in}
-    \def\@dotnumx{43}
-    \def\@dotnumy{31}
+    \geometry{top=15mm}
+    \def\@dotnumx{46}
+    \def\@dotnumy{40}
   \else
     % landscape without margin
-    \geometry{top=0.24in}
-    \def\@dotnumx{43}
-    \def\@dotnumy{33}
+    \geometry{top=5mm}
+    \def\@dotnumx{46}
+    \def\@dotnumy{42}
   \fi
 \else
   \if@dotdinafour
     \if@dotmargin
       % A4 with margin
-      \geometry{top=0.74in}
-      \def\@dotnumx{32}
-      \def\@dotnumy{43}
+      \geometry{top=15mm}
+      \def\@dotnumx{42}
+      \def\@dotnumy{56}
     \else
       % A4 without margin
-      \geometry{top=0.24in}
-      \def\@dotnumx{32}
-      \def\@dotnumy{46}
+      \geometry{top=5mm}
+      \def\@dotnumx{42}
+      \def\@dotnumy{59}
     \fi
   \else
     \if@dotdinasix
       \if@dotmargin
         % A6 with margin
-        \geometry{top=0.74in}
-        \def\@dotnumx{15}
-        \def\@dotnumy{20}
+        \geometry{top=15mm}
+        \def\@dotnumx{21}
+        \def\@dotnumy{27}
       \else
         % A6 without margin
-        \geometry{top=0.24in}
-        \def\@dotnumx{15}
-        \def\@dotnumy{22}
+        \geometry{top=5mm}
+        \def\@dotnumx{21}
+        \def\@dotnumy{29}
       \fi
     \else
       \if@dotmargin
         % portrait with margin
-        \geometry{top=0.74in}
-        \def\@dotnumx{33}
-        \def\@dotnumy{41}
+        \geometry{top=15mm}
+        \def\@dotnumx{42}
+        \def\@dotnumy{53}
       \else
         % portrait without margin
-        \geometry{top=0.24in}
-        \def\@dotnumx{33}
-        \def\@dotnumy{43}
+        \geometry{top=5mm}
+        \def\@dotnumx{42}
+        \def\@dotnumy{55}
       \fi
     \fi
   \fi
@@ -97,10 +97,10 @@
 \definecolor{dotcolor}{RGB}{204,204,198}
 
 % Define dot grid macro
-\newcommand{\dotgrid}{\begin{tikzpicture}[x=0.25in, y=0.25in]
+\newcommand{\dotgrid}{\begin{tikzpicture}[x=5mm, y=5mm]
     \foreach \x in {1, ..., \@dotnumx}{
       \foreach \y in {1, ..., \@dotnumy}{
-        \fill[dotcolor] (\x,\y) circle[radius=0.01in];
+        \fill[dotcolor] (\x,\y) circle[radius=0.254mm];
       }
     }
   \end{tikzpicture}}

@@ -1,6 +1,6 @@
 # Dot Grid Paper
 
-These are PDF templates for 0.25 inch dot grid paper in US letter, A4, and A6 formats.
+These are PDF templates for 5mm dot grid paper in US letter, A4, and A6 formats.
 
 ## Overview
 
@@ -39,7 +39,7 @@ Or, simply use the included output files in the `pdf` directory.
 
 *   Dot color is `rgb(204, 204, 198)` or `#ccccc6`.
 
-*   Dot radius is 0.01 inches.
+*   Dot radius is 0.254mm.
 
 [GoodNotes]: http://www.goodnotesapp.com
 [iOS]: https://itunes.apple.com/us/app/goodnotes-4-notes-pdf/id778658393?mt=8&uo=4&at=11l5Vs

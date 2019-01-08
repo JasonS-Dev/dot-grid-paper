@@ -1,6 +1,6 @@
 # Dot Grid Paper
 
-These are PDF templates for 5mm dot grid paper in US letter, A4, and A6 formats.
+These are PDF templates for 5mm dot grid paper in US letter, A4, A5 and A6 formats.
 
 ## Overview
 
